@@ -1,5 +1,5 @@
  <?php
-   include __DIR__ . '/database/file.php';
+   include __DIR__ . '/database.php';
   ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -8,10 +8,17 @@
     <title></title>
   </head>
   <body>
-    <h2>
+
+
       <?php
-      echo  $people[0]  ;
-     ?>
-   </h2>
+       foreach ($people as $key) {
+            // code...
+          echo  json_encode ($key["poster"]);
+          echo  json_encode ($key["title"]);
+          echo  json_encode ($key["author"]);
+          echo  json_encode ($key["genre"]);
+
+          } ?>
+
   </body>
 </html>
