@@ -55,5 +55,5 @@ $people = [
 ];
 
      // code...
-     echo  "$people[0] " ;
+
 ?>
